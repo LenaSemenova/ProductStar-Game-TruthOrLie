@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'Mont Regular';
+    src: url(fonts/Mont-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Mont SemiBold';
+    src: url(fonts/Mont-SemiBold.ttf) format('truetype');
+}
+.lm-main-body {
+    margin: 0;
+    background-color: #FFD12D;
+    ;
+}
+.lm-main-container {
+    width: 375px;
+    height: 812px;
+    display: grid;
+    grid-template-rows: 22.5% 56% 22%;
+}
+.lm-main-top-bar {
+    grid-row: 1;
+    background-color: white;
+    width: 100%;
+    height: 36%;
+}
+.lm-main-top-bar-logo {
+    width: 120px;
+    height: 20px;
+    margin: 24px 225px 24px 30px;
+}
+.lm-main-info-box {
+    grid-row: 2;
+    height: 382px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: auto;
+}
+.lm-main-game-logo-wrapper {
+    height: 122px;
+    margin-bottom: 46px;
+}
+.lm-main-game {
+    font-family: 'Mont Regular';
+    font-size: 20px;
+    line-height: 22px;
+    color: black;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 46px;
+}
+.lm-main-truth-or-lie {
+    font-family: 'Mont SemiBold';
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 27.5px;
+    color: black; 
+    width: 250px;
+    height: 39px;
+    text-align: center;
+    margin-bottom: 46px;
+}
+.lm-main-take-part {
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    border: 0px;
+    background-color:#1D2136;
+    font-family: 'Mont Regular';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17.6px;
+    margin-bottom: 46px;
+    color: white;
+}
+.lm-main-link {
+    color: black;
+}
+.lm-main-rules {
+    font-family: 'Mont Regular';
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+    text-decoration: underline;
+    width: 178px;
+    height: 29px;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+.lm-main-icon-wrapper {
+    display: block;
+}
+.lm-main-icon-wrapper img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 12px;
+    left: 168.5px;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+@media only screen and (min-width: 1024px) {
+    .lm-main-container {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 30% 50% 20%;
+    }
+    .lm-main-middle-container {
+        display: flex;
+        justify-content: center;
+    }
+    .lm-main-top-bar {
+        height: 136px;
+        width: 100%;
+    }
+    .lm-main-top-bar-logo {
+        width: 192px;
+        height: 33px;
+        margin-top: 53px;
+        margin-left: 92px;
+    }
+    .lm-main-info-box {
+        width: 537px;
+        height: 507px;
+    }
+    .lm-main-game {
+        font-size: 30px;
+        line-height: 33px;
+    }
+    .lm-main-truth-or-lie {
+        width: 537px;
+        height: 68px;
+        font-size: 44px;
+        line-height: 48.4px;
+    }
+    .lm-main-take-part {
+        width: 260px;
+        font-family: 'Mont Regular';
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 19.8px;
+    }
+    .lm-main-rules {
+        font-size: 30px;
+        width: 260px;
+        height: 41px;
+        width: 100%;
+    }
+    .lm-main-icon-wrapper {
+        display: block;
+    }
+    .lm-main-icon-wrapper img {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        top: 83px;
+        left: 92px;
+    }
+  }

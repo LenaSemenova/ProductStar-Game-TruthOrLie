@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Mont Regular';
+    src: url('fonts/Mont-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Mont SemiBold';
+    src: url('fonts/Mont-SemiBold.ttf') format('truetype');
+}
+.dm-r-body {
+    margin: 0;
+    background-color: #1D2136;
+}
+.dm-r-container {
+    width: 375px;
+    height: 812px;
+    display: grid;
+    grid-template-rows: 81px 650px 81px;
+}
+.dm-r-answer-wrapper {
+    grid-row: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.dm-r-info-box {
+    width: 325px;
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #FFD12D;
+    border: 5px solid #A2FF76;
+    border-radius: 30px;
+}
+.dm-r-result-title {
+height: 34px;
+margin-top: 85px;
+width: 100%;
+font-family: 'Mont SemiBold';
+font-size: 31px;
+font-weight: 700;
+line-height: 33px;
+text-align: center;
+color: black;
+}
+.dm-r-image-wrapper {
+    height: 122px;
+}
+.dm-r-result-subtitle {
+    font-family: 'Mont SemiBold';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 39px;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+}
+.dm-r-product-name {
+    width: 100%;
+    text-align: center;
+}
+.dm-r-exists {
+    width: 100%;
+}
+.dm-r-result-description {
+width: 246px;
+font-family: 'Mont Regular';
+font-size: 16px;
+font-weight: 600;
+line-height: 22.4px;
+text-align: center;
+color: black;
+text-align: center;
+}
+.dm-r-btn-back-to-game {
+    width: 250px;
+    height: 47px;
+    border-radius: 10px;
+    background-color: #1D2136;
+    font-family: 'Mont SemiBold';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    color: white;
+    border: none;
+    margin-bottom: 56px;
+}
+@media only screen and (min-width: 1024px) {
+    .dm-r-container {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 18.2% 63.6% 18.2%;
+    }
+    .dm-r-info-box {
+        width: 642px;
+        height: 640px;
+    }
+    .dm-r-result-title {
+        margin-top: 74px;
+        margin-bottom: 10px;
+    }
+    .dm-r-image-wrapper {
+        margin-bottom: 10px;
+    }
+    .dm-r-result-subtitle {
+        font-size: 22px;
+        line-height: 39px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .dm-r-product-name {
+        width: 100%;
+        text-align: center;
+    }
+    .dm-r-exists {
+        width: 100%;
+        text-align: center;
+    }
+    .dm-r-result-description {
+        width: 485px;
+        font-size: 18px;
+        line-height: 39px;
+        }
+    .dm-r-btn-back-to-game {
+        font-size: 18px;
+        line-height: 21.6px;
+        width: 268px;
+        height: 50px;
+        }
+    
+  }

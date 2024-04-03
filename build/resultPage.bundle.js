@@ -1,0 +1,1 @@
+(()=>{"use strict";let e=document.querySelector(".result-score"),t=document.querySelector(".btn-get-prizes");const n=new URLSearchParams(window.location.search).get("correctOnesBack");e.textContent=`${n}/6`,window.addEventListener("DOMContentLoaded",(()=>{t&&(t.onclick=()=>{alert("Здесь должна быть ссылка на колесо фортуны, но её нет!")})}))})();

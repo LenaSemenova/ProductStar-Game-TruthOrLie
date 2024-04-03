@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'Mont Regular';
+    src: url(fonts/Mont-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Mont SemiBold';
+    src: url(fonts/Mont-SemiBold.ttf) format('truetype');
+}
+.lm-rules-body {
+    margin: 0;
+    background-color: #FFD12D;
+}
+.lm-rules-container {
+    width: 375px;
+    height: 812px;
+    display: grid;
+    grid-template-rows: 232.5px 347px 232.5px;
+}
+.lm-rules-controls {
+    width: 298px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 22px 0px 0px 38px;
+    visibility: hidden;
+}
+.lm-rules-rules-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.lm-rules-info-box {
+    width: 289px;
+    grid-row: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.lm-rules-rules-title {
+font-family: 'Mont SemiBold';
+font-size: 30px;
+font-weight: 700;
+line-height: 33px;
+text-align: center;
+color: black;
+margin-top: 37px;
+}
+.lm-rules-description {
+font-family: 'Mont Regular';
+font-size: 12px;
+font-weight: 600;
+line-height: 16.8px;
+text-align: center;
+color: black;
+}
+.lm-rules-btn-play {
+width: 250px;
+height: 50px;
+border-radius: 10px;
+border: 1px solid #1D2136;
+background-color: #1D2136;
+text-align: center;
+font-family: 'Mont SemiBold';
+font-size: 18px;
+font-weight: 700;
+line-height: 19.8px;
+color: white;
+}
+.lm-rules-options-box {
+    display: none;
+}
+@media only screen and (min-width: 1024px) {
+    .lm-rules-container {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 29% 42% 29%;
+    }
+    .lm-rules-controls {
+        display: none;
+    }
+    .lm-rules-info-box {
+        width: 689px;
+        height: 448px;
+    }
+    .lm-rules-rules-wrapper {
+        grid-row: 2;
+    }
+    .lm-rules-rules-title {
+        margin-top: 0;
+        height: 66px;
+    }
+    .lm-rules-options-box {
+        width: 496px;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .lm-rules-btn-true {
+        width: 199px;
+        height: 50px;
+        background-color: #FFD12D;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-family: 'Mont SemiBold';
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 19.8px;
+        color: black;
+        text-align: center;
+    }
+    .lm-rules-btn-true:hover {
+        background-color: #A2FF76;
+        transition: 0.5s;  
+    }
+    .lm-rules-btn-false {
+        width: 199px;
+        height: 50px;
+        background-color: #FFD12D;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-family: 'Mont SemiBold';
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 19.8px;
+        text-align: center;
+        color: black;
+    }
+    .lm-rules-btn-false:hover {
+        background-color: #FF7676;
+        transition: 0.5s; 
+    }
+    .lm-rules-or {
+        font-family: 'Mont Regular';
+        font-size: 18px;
+        line-height: 19.8px;
+        color: black;
+    }
+    .lm-rules-description {
+        font-size: 18px;
+        line-height: 25.2px;
+        height: 149px;
+        margin-bottom: 20px;
+    }
+    .lm-rules-btn-play {
+        width: 199px;
+        height: 50px;
+    }
+    
+  }

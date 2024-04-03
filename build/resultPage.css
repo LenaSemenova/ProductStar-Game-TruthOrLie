@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Mont Regular';
+    src: url(fonts/Mont-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Mont SemiBold';
+    src: url(fonts/Mont-SemiBold.ttf) format('truetype');
+}
+body {
+    margin: 0;
+    background-color: #1D2136;
+}
+.container {
+    width: 375px;
+    height: 812px;
+    display: grid;
+    grid-template-rows: 153px 506px 153px;
+}
+.answer-wrapper {
+    grid-row: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.info-box {
+    width: 325px;
+    height: 506px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.result-title {
+height: 34px;
+margin-bottom: 36px;
+width: 100%;
+font-family: 'Mont SemiBold';
+font-size: 30px;
+font-weight: 700;
+line-height: 33px;
+text-align: center;
+color: white;
+}
+.image-wrapper {
+    height: 122px;
+    margin-bottom: 46px;
+}
+.result-box {
+font-family: 'Mont SemiBold';
+font-size: 22px;
+font-weight: 700;
+line-height: 39px;
+text-align: center;
+color: white;
+width: 100%;
+margin-bottom: 28px;
+}
+.btn-get-prizes,
+.btn-back-to-game {
+    width: 250px;
+    height: 47px;
+    border-radius: 10px;
+    background-color: rgb(255, 209, 45);
+    font-family: 'Mont SemiBold';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    color: black;
+    border: none;
+}
+.btn-get-prizes {
+    box-shadow: 4px 4px 4px 2px rgba(255,209,45, .6);
+}
+.btn-back-to-game {
+    margin-bottom: 30px;
+}
+@media only screen and (min-width: 1024px) {
+    .container {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 25% 50% 25%;
+    }
+    .info-box {
+        width: 268px;
+        height: 526px;
+    }
+    .result-title {
+        margin-bottom: 30px;
+        letter-spacing: 0.5px;
+    }
+    .image-wrapper {
+        margin-bottom: 30px;
+    }
+    .result-subtitle {
+        font-size: 22px;
+        line-height: 39px;
+    }
+    .result-description {
+        width: 485px;
+        font-size: 18px;
+        line-height: 39px;
+        }
+    .btn-back-to-game,
+    .btn-get-prizes {
+        font-size: 18px;
+        line-height: 21.6px;
+        width: 268px;
+        height: 50px;
+        }
+  }
