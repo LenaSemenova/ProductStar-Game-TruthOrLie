@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Регистрация</title>
+    <!--<link rel="stylesheet" href="style-dm-signup.css" />-->
+  </head>
+  <body class="dm-form-body">
+    <div class="dm-form-container">
+      <div class="dm-form-middle-container">
+    <div class="dm-form-info-box">
+        <div class="dm-form-logo-for-large-screens">
+        <div class="dm-form-logo-wrapper">
+          <img src="./images/productstar-white.png">
+        </div>
+        <div class="dm-form-exit-wrapper">
+          <img src="./images/exit-black.png">
+        </div>
+        <div class="dm-form-game-name">ПРАВДА ИЛИ ЛОЖЬ</div>
+        </div>
+        <div class="dm-form-productstar-logo-wrapper">
+            <img class="dm-form-logo" src="./images/productstar-dark-blue.png">
+            <div class="dm-form-game-name">ПРАВДА ИЛИ ЛОЖЬ</div>
+        </div>
+    <div class="dm-form-greeting-signup">пройдите регистрацию</div>
+    <div class="dm-form-form-wrapper">
+        <form id="dm-form-game-signup-form" action="/apply/" method="POST">
+            <label class="dm-form-label" for="name">Имя</label>
+            <input type="text" name="name" id="name" required />
+            <label class="dm-form-label" for="phone-number">Номер телефона</label>
+            <input type="text" name="phone-number" id="phone-number" required />
+            <label class="dm-form-label" for="email">Электронная почта</label>
+            <input type="email" name="email" id="email" required />
+            <div class="dm-form-confirmation-box">
+            <input type="checkbox" name="agreement" id="confirmation" required value="1" />
+            <div class="dm-form-confirmation-text">Я подтверждаю согласие на обработку персональных данных в соответствии с условиями  <a class="dm-form-link" href="https://productstar.ru/confpolitics">Политики конфиденциальности</a></div>
+            </div>
+            <div class="dm-form-start-game-wrapper">
+                <button type="submit" class="dm-form-btn-start-game">НАЧАТЬ ИГРУ</button>
+            </div>
+        </form>
+    </div>
+    </div>  
+    </div>
+    </div>
+  <!--<script src="./script-signup.js"></script>-->
+  </body>
+</html>

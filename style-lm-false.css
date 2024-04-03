@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'Mont Regular';
+    src: url('fonts/Mont-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Mont SemiBold';
+    src: url('fonts/Mont-SemiBold.ttf') format('truetype');
+}
+.lm-f-body {
+    margin: 0;
+    background-color: #1D2136;
+}
+.lm-f-container {
+    width: 375px;
+    height: 812px;
+    display: grid;
+    grid-template-rows: 81px 650px 81px;
+}
+.lm-f-answer-wrapper {
+    grid-row: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.lm-f-info-box {
+    width: 325px;
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    border: 5px solid #FF7676;
+    border-radius: 30px;
+}
+.lm-f-result-title {
+margin-top: 85px;
+width: 180px;
+font-family: 'Mont SemiBold';
+font-size: 30px;
+font-weight: 700;
+line-height: 33px;
+text-align: center;
+color: black;
+}
+.lm-f-image-wrapper {
+    height: 122px;
+}
+.lm-f-result-subtitle {
+    font-family: 'Mont SemiBold';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 39px;
+    text-align: center;
+    width: 100%;
+    height: 56px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+}
+.lm-f-product-name {
+    width: 100%;
+    text-align: center;
+}
+.lm-f-exists {
+    width: 100%;
+}
+.lm-f-result-description {
+width: 246px;
+font-family: 'Mont Regular';
+font-size: 16px;
+font-weight: 600;
+line-height: 22.4px;
+text-align: center;
+color: black;
+text-align: center;
+}
+.lm-f-btn-back-to-game {
+    width: 250px;
+    height: 47px;
+    border-radius: 10px;
+    background-color: #1D2136;
+    font-family: 'Mont SemiBold';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    color: white;
+    border: none;
+    margin-bottom: 56px;
+}
+@media only screen and (min-width: 1024px) {
+    .lm-f-container {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 18.2% 63.6% 18.2%;
+    }
+    .lm-f-info-box {
+        width: 642px;
+        height: 640px;
+    }
+    .lm-f-result-title {
+        width: 100%;
+        margin-top: 74px;
+        margin-bottom: 10px;
+    }
+    .lm-f-image-wrapper {
+        margin-bottom: 10px;
+    }
+    .lm-f-result-subtitle {
+        font-size: 22px;
+        line-height: 39px;
+        justify-content: center;
+    }
+    .lm-f-product-name {
+        width: 100%;
+        text-align: center;
+    }
+    .lm-f-exists {
+        width: 100%;
+        text-align: center;
+    }
+    .lm-f-result-description {
+        width: 485px;
+        font-size: 18px;
+        line-height: 39px;
+        }
+    .lm-f-btn-back-to-game {
+        font-size: 18px;
+        line-height: 21.6px;
+        width: 268px;
+        height: 50px;
+        }
+    
+  }
