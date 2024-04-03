@@ -124,7 +124,7 @@ color: white;
     margin-right: 20px;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1440px) {
     .dm-form-container {
         width: 100%;
         height: 100vh;
