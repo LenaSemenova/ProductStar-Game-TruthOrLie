@@ -87,7 +87,6 @@ async function getCurrentQuestion () {
 
     async function redirect () {
         const totalAmount = await getQuestionsIDs();
-        console.log(totalAmount.length);
         if (totalAmount.length % 6 === 0) {
             if (btnBack) {
                 btnBack.onclick = () => {

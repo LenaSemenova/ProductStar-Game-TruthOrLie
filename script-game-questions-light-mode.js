@@ -75,11 +75,9 @@ async function getQuestions () {
         question_id: "",
     }
     const questionID = await brandNewID();
-    console.log(questionID);
     toBePushed.question_id = questionID;
     const response = await pushID(toBePushed);
     if (response.status === 201) {
-    console.log("Successfully added to data base!")
     }
     return new Promise((resolve, reject) => {
         fetch(`http://127.0.0.1:8000/questions/api/${questionID}/`)
@@ -101,7 +99,6 @@ async function getQuestions () {
 async function formQuestion () {
     try {
         const result = await getQuestions();
-        console.log(result);
         item = result;
         productName.textContent = item.title;
         productLogo.src = item.image;
@@ -111,13 +108,9 @@ async function formQuestion () {
         if (btnTrue) {
             btnTrue.onclick = () => {
                 if (item.is_true === true) {
-                    correctOnes++;
-                    console.log(item.is_true);
-                    console.log(`Good boy! The product ${item.title} exists!`);  
+                    correctOnes++;  
                     window.location.href= `http://localhost:${port}/light-mode-right.html?correctOnes=${correctOnes}`;
-                } else {
-                    console.log(item.is_true);
-                    console.log(`Try again! The product ${item.title} does not exist!`); 
+                } else { 
                     window.location.href= `http://localhost:${port}/light-mode-false.html?correctOnes=${correctOnes}`; 
                 }
             }
@@ -125,13 +118,9 @@ async function formQuestion () {
         if (btnFalse) {
             btnFalse.onclick = () => {
                 if (item.is_true === false) {
-                    correctOnes++;
-                    console.log(item.is_true);
-                    console.log(`Good boy! ${item.title} is a non-existent product`);   
+                    correctOnes++;  
                     window.location.href= `http://localhost:${port}/light-mode-right.html?correctOnes=${correctOnes}`;
                 } else {
-                    console.log(item.is_true);
-                    console.log(`Try again! ${item.title} exists!`);
                     window.location.href= `http://localhost:${port}/light-mode-false.html?correctOnes=${correctOnes}`;
                 }
             }
