@@ -66,12 +66,18 @@
     border-radius: 10px;
     border: 0px;
     background-color:#1D2136;
-    font-family: 'Mont Regular';
+    font-family: 'Mont SemiBold';
     font-weight: 600;
     font-size: 16px;
     line-height: 17.6px;
     margin-bottom: 46px;
     color: white;
+}
+.lm-main-take-part:hover {
+    opacity: 0.9;
+}
+a .lm-main-take-part {
+    font-family: 'Mont SemiBold';
 }
 .lm-main-link {
     color: black;
@@ -87,8 +93,14 @@
     text-align: center;
     letter-spacing: 1.5px;
 }
+.lm-main-rules:hover {
+    opacity: 0.9;
+}
 .lm-main-icon-wrapper {
     display: block;
+}
+.lm-main-icon-wrapper:hover {
+    opacity: 0.9;
 }
 .lm-main-icon-wrapper img {
     position: absolute;
@@ -136,8 +148,7 @@
     }
     .lm-main-take-part {
         width: 260px;
-        font-family: 'Mont Regular';
-        font-weight: 600;
+        font-family: 'Mont SemiBold';
         font-size: 18px;
         line-height: 19.8px;
     }

@@ -67,6 +67,9 @@ font-size: 18px;
 font-weight: 700;
 line-height: 19.8px;
 }
+.dm-rules-btn-play:hover {
+    opacity: 0.9;
+}
 .dm-rules-options-box {
     display: none;
 }

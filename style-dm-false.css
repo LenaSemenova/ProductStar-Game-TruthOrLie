@@ -55,14 +55,8 @@ color: black;
     height: 56px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;  
-}
-.dm-f-product-name {
-    width: 100%;
-    text-align: center;
-}
-.dm-f-exists {
-    width: 100%;
+    justify-content: center; 
+    align-items: center; 
 }
 .dm-f-result-description {
 width: 246px;
@@ -87,6 +81,9 @@ text-align: center;
     border: none;
     margin-bottom: 56px;
 }
+.dm-f-btn-back-to-game:hover {
+    opacity: 0.9;
+}
 @media only screen and (min-width: 1440px) {
     .dm-f-container {
         width: 100%;
@@ -110,14 +107,6 @@ text-align: center;
         font-size: 22px;
         line-height: 39px;
         justify-content: center;
-    }
-    .dm-f-product-name {
-        width: 100%;
-        text-align: center;
-    }
-    .dm-f-exists {
-        width: 100%;
-        text-align: center;
     }
     .dm-f-result-description {
         width: 485px;

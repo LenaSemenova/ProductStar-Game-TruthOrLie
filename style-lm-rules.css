@@ -68,6 +68,9 @@ font-weight: 700;
 line-height: 19.8px;
 color: white;
 }
+.lm-rules-btn-play:hover {
+    opacity: 0.9;
+}
 .lm-rules-options-box {
     display: none;
 }

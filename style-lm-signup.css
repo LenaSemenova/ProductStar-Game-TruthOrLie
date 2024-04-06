@@ -106,6 +106,9 @@ line-height: 19.2px;
 text-align: center;
 color: black;
 }
+.lm-form-btn-start-game:hover {
+    opacity: 0.9;
+}
 .lm-form-logo-for-large-screens {
     display: none;
 }

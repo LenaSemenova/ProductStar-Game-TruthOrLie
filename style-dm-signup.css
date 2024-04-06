@@ -107,6 +107,9 @@ line-height: 19.2px;
 text-align: center;
 color: white;
 }
+.dm-form-btn-start-game:hover {
+    opacity: 0.9;
+}
 .dm-form-logo-for-large-screens {
     display: none;
 }

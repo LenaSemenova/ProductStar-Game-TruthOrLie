@@ -4,9 +4,8 @@ import "./style-dm-right.css"
 
 //DOM ELEMENTS
 
-const productName = document.querySelector(".dm-r-product-name");
+const productNameExists = document.querySelector(".dm-r-result-subtitle");
 const resultDescrip = document.querySelector(".dm-r-result-description");
-const exists = document.querySelector(".dm-r-exists");
 const btnBack = document.querySelector(".dm-r-btn-back-to-game");
 
 //URLS
@@ -72,12 +71,11 @@ async function getCurrentQuestion () {
         try {
             const result = await getCurrentQuestion();
             let item = result;
-            productName.textContent = item.title;
             resultDescrip.textContent = item.question;
             if (item.is_true === true) {
-                exists.textContent = "СУЩЕСТВУЕТ";
+                productNameExists.textContent = `${item.title} СУЩЕСТВУЕТ`;
             } else {
-                exists.textContent = "НЕ СУЩЕСТВУЕТ";
+                productNameExists.textContent = `${item.title} НЕ СУЩЕСТВУЕТ`;
             }
         }
         catch (error) {

@@ -65,11 +65,16 @@
     border-radius: 10px;
     border: 0px;
     background-color: #FFD12D;
-    font-family: 'Mont Regular';
-    font-weight: 600;
+    font-family: 'Mont SemiBold';
     font-size: 16px;
     line-height: 17.6px;
     margin-bottom: 46px;
+}
+a .dm-main-take-part {
+    font-family: 'Mont SemiBold';
+}
+.dm-main-take-part:hover {
+    opacity: 0.9;
 }
 .dm-main-link {
     color: white;
@@ -85,8 +90,14 @@
     text-align: center;
     letter-spacing: 1.5px;
 }
+.dm-main-rules:hover {
+    opacity: 0.9;
+}
 .dm-main-icon-wrapper {
     display: block;
+}
+.dm-main-icon-wrapper:hover {
+    opacity: 0.9;
 }
 .dm-main-icon-wrapper img {
     position: absolute;
